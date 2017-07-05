@@ -1,29 +1,24 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {BuyoutPage} from "../buyout/buyout";
 
 /**
- * Generated class for the ShopPage page.
+ * Generated class for the FavoritesPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-shop',
-  templateUrl: 'shop.html',
+  selector: 'page-favorites',
+  templateUrl: 'favorites.html',
 })
-export class ShopPage {
+export class FavoritesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ShopPage');
-  }
-
-  onBuyout(item: string) {
-    this.navCtrl.push(BuyoutPage, item);
+    console.log('ionViewDidLoad FavoritesPage');
   }
 
 }
