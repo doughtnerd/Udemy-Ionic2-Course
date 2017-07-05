@@ -16,4 +16,9 @@ export class UsersPage {
     this.navController.push(UserPage, name);
   }
 
+  ionViewCanEnter() {
+    console.log("ionViewCanEnter");
+    return true;
+  }
+
 }
