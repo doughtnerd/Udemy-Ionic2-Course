@@ -5,37 +5,26 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import {LibraryPageModule} from "../pages/library/library.module";
-import {QuotePageModule} from "../pages/quote/quote.module";
-import {QuotesPageModule} from "../pages/quotes/quotes.module";
-import {SettingsPageModule} from "../pages/settings/settings.module";
-import {TabsPage} from "../pages/tabs/tabs";
-import {FavoritesPageModule} from "../pages/favorites/favorites.module";
-import {QuotesService} from "../services/quotes";
+import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage
+    HomePage
   ],
   imports: [
     BrowserModule,
-    FavoritesPageModule,
-    LibraryPageModule,
-    QuotesPageModule,
-    QuotePageModule,
-    SettingsPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage
+    HomePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}, QuotesService
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
