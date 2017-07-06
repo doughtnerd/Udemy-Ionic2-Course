@@ -35,7 +35,6 @@ export class QuotesPage implements OnInit{
         {
           text: 'Yes, I\'m sure',
           handler: () => {
-            console.log('Adding to favorites: ', selectedQuote);
             this.quotesService.addFavorite(selectedQuote);
           }
         },
