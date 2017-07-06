@@ -12,6 +12,7 @@ import {SettingsPageModule} from "../pages/settings/settings.module";
 import {TabsPage} from "../pages/tabs/tabs";
 import {FavoritesPageModule} from "../pages/favorites/favorites.module";
 import {QuotesService} from "../services/quotes";
+import {SettingsService} from "../services/settings";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {QuotesService} from "../services/quotes";
   providers: [
     StatusBar,
     SplashScreen,
+    SettingsService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}, QuotesService
   ]
 })
