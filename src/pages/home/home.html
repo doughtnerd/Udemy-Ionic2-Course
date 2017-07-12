@@ -7,6 +7,19 @@
 </ion-header>
 
 <ion-content padding>
+
+  <app-touch-event></app-touch-event>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>A Column</ion-col>
+      <ion-col>A Second</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset-2>Another</ion-col>
+    </ion-row>
+  </ion-grid>
+
   <button ion-button color="secondary" (click)="onClick()">A normal button</button>
   <button ion-button outline (click)="onClick()">A normal button</button>
   <button ion-button clear (click)="onClick()">A normal button</button>
@@ -16,7 +29,7 @@
   <button ion-button large (click)="onClick()">A normal button</button>
   <button ion-button icon-left (click)="onClick()"><ion-icon name="home"></ion-icon>Home</button>
 
-  <ion-list>
+  <ion-list no-lines inset>
     <ion-item>
       <ion-icon name="star" item-left></ion-icon>
       <h1>Hello</h1>
@@ -24,4 +37,34 @@
     </ion-item>
     <button ion-item item-right>A button item</button>
   </ion-list>
+
+  <ion-item-group>
+    <ion-item-divider>A</ion-item-divider>
+    <ion-item>
+      Apple
+    </ion-item>
+    <ion-item>
+      Avocados
+    </ion-item>
+    <ion-item-divider>B</ion-item-divider>
+    <ion-item>
+      Bananas
+    </ion-item>
+    <ion-item>
+      Berries
+    </ion-item>
+  </ion-item-group>
+
+  <ion-list>
+    <ion-list-header>Privacy</ion-list-header>
+    <ion-item>Tracking</ion-item>
+    <ion-item>Personal Images</ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Sharing</ion-list-header>
+    <ion-item>With Anyone</ion-item>
+    <ion-item>None</ion-item>
+  </ion-list>
+
 </ion-content>

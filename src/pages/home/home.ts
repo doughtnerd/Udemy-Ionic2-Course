@@ -11,7 +11,4 @@ export class HomePage {
 
   }
 
-  onClick() {
-    console.log('click');
-  }
 }
